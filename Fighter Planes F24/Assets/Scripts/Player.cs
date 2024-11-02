@@ -47,6 +47,14 @@ public class Player : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y * -1, 0);
         }
+        if (transform.position.y > 1f)
+        {
+            transform.position = new Vector3(transform.position.x, 1f, 0);
+        }
+        if (transform.position.y < -4f)
+        {
+            transform.position = new Vector3(transform.position.x, -4f, 0);
+        }
     }
 
     void Shooting()
